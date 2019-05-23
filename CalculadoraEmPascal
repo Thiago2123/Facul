@@ -1,0 +1,66 @@
+//Calculadora em pascal
+
+
+program Calculadora_APS;
+
+
+
+var
+   
+  primNum : integer;
+   
+  segNum : integer;
+   
+  soma : integer;
+   
+  sub : integer;
+   
+  mult : integer;
+   
+  divis : integer;
+
+
+
+begin
+     
+     
+  writeln('Digite o primeiro número:');
+     
+  readln(primNum);
+     
+  writeln('Digite o segundo número:');
+     
+  readln(segNum);
+     
+     
+  
+  writeln;
+     
+     
+  
+  soma:= primNum + segNum;
+     
+  writeln('A soma é ', soma);
+     
+     
+  
+  sub:= primNum - segNum;
+     
+  writeln('A subtração é ', sub);
+     
+     
+  
+  mult:= primNum * segNum;
+     
+  writeln('A multiplicação é ', mult);
+     
+     
+  
+  divis:= primNum div segNum;
+     
+  writeln('A divisão é ', divis);
+
+
+
+end.
+
