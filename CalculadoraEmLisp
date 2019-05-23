@@ -1,0 +1,21 @@
+//Calculadora Lisp
+
+(defun soma(num1 num2)
+    (format t "~%A soma é: ~2f" (+ num1 num2)))
+
+(defun subtrai(num1 num2)
+    (format t "~%A subtração é: ~2f" (- num1 num2)))
+
+(defun multiplica(num1 num2)
+    (format t "~%A multiplicação é: ~2f" (* num1 num2)))
+
+(defun divide(num1 num2)
+    (format t "~%A divisão é: ~2f" (/ num1 num2)))
+    
+(setq n1 (read))
+(setq n2 (read))
+
+(soma n1 n2)
+(subtrai n1 n2)
+(multiplica n1 n2)
+(divide n1 n2)
