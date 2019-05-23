@@ -1,0 +1,21 @@
+//Calculadora em prolog
+
+subtrai([ ], 0).
+subtrai([Elem| Cauda], S) :-
+subtrai(Cauda,S1),
+S is -(Elem,S1).
+
+soma([ ],0).
+soma([Elem| Cauda], S) :-
+soma(Cauda,S1),
+S is +(Elem,S1).
+
+divide([ ],1).
+divide([Elem| Cauda], S) :-
+divide(Cauda,S1),
+S is /(Elem,S1).
+
+multiplica([ ],1).
+multiplica([Elem| Cauda], S) :-
+multiplica(Cauda,S1),
+S is *(Elem, S1).
