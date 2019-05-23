@@ -1,0 +1,73 @@
+//Calculadora Fortran
+
+program CalculadoraAPS
+
+   
+ 
+integer :: a 
+    
+integer :: b
+    
+integer :: result
+    
+integer :: escolha
+    
+    
+
+print *, "Digite o primeiro numero:"
+    
+read *, a
+    
+print *, "Digite o segundo numero:"
+    
+read *, b
+    
+print *, "Selecione uma operacao: 1 - Soma; 2 - Subtração; 3 - Multiplicação; 4 - Divisão"
+    
+read *, escolha
+    
+    
+    
+
+SOMAR: IF(escolha == 1) THEN
+    
+result = a+b
+    
+print *, "O resultado da soma é: ", result
+    
+end IF SOMAR
+    
+    
+    
+
+SUBTRAIR: IF(escolha == 2) THEN
+    
+result = a-b
+    
+print *, "O resultado da subtração é: ", result
+    
+end IF SUBTRAIR
+    
+    
+
+MULTIPLICAR: IF(escolha == 3) THEN
+    
+result = a*b
+    
+print *, "O resultado da multiplicação é: ", result
+    
+end IF MULTIPLICAR
+    
+    
+
+DIVIDIR: IF(escolha == 4) THEN
+    
+result = a/b
+    
+print *, "O resultado da divisão é: ", result
+    
+end IF DIVIDIR
+    
+
+
+end program CalculadoraAPS
