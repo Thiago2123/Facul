@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h>
+
+//Calculadora em C++
+
+
+int main(int argc, char *argv[]) {
+	
+	setlocale(LC_ALL, "");
+	
+	int selecao, result, primNum, segNum;
+	
+	printf("Digite o primeiro número da operação:\n");
+	scanf("%d", &primNum);
+	printf("Digite o segundo número da operação:\n\n");
+	scanf("%d", &segNum);
+	
+	printf("Selecione a operação a ser realizada:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n\n");
+	scanf("%d", &selecao);
+	if(selecao == 1){
+		result = soma(primNum, segNum);
+		printf("\nO resultado é: %d", result);
+		getch();
+	}else if(selecao == 2){
+		result = subtrai(primNum, segNum);
+		printf("\nO resultado é: %d", result);
+		getch();
+	}else if(selecao == 3){
+		result = multiplica(primNum, segNum);
+		printf("\nO resultado é: %d", result);
+		getch();
+	}else if(selecao == 4){
+		result = divide(primNum, segNum);
+		printf("\nO resultado é: %d", result);
+		getch();
+	}
+	
+}
+
+int soma(int primNum, int segNum) {
+
+	int resultSoma = primNum + segNum;
+	return resultSoma;
+}
+
+int subtrai(int primNum, int segNum){
+	int resultSubtrai = primNum - segNum;
+	return resultSubtrai;
+}
+
+int multiplica(int primNum, int segNum){
+	int resultMul = primNum*segNum;
+	return resultMul;
+}
+
+int divide(int primNum, int segNum){
+	int resultDiv = primNum/segNum;
+	return resultDiv;
+} 
